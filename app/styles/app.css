@@ -1,0 +1,13 @@
+body{
+  background-color: #F8F8F8;
+}
+
+.title{
+  position:relative;
+    overflow:hidden;
+}
+
+.bg-2{
+  background-color: white;
+  padding-top: 40px;
+}

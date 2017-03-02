@@ -1,0 +1,10 @@
+<div class='text-center'>
+  <h3>Submit your Story NOW!!</h3>
+  <form>
+    {{input value=author id='author' placeholder='Author'}}<br />
+    {{input value=title id='title' placeholder='Title'}}<br />
+    {{input value=content id='content' placeholder='Content'}}<br />
+    {{input value=image id='image' placeholder='Image URL'}}<br />
+    <button {{action 'submit'}} class='btn'>Submit</button>
+  </form>
+</div>

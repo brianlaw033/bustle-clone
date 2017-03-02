@@ -1,0 +1,35 @@
+<div class='text-center'>
+
+{{#carousel-container transitionInterval=500}}
+  {{#carousel-body}}
+  {{#each model as |new|}}
+    {{#carousel-item}}
+      <img src='{{new.image}}' />
+      <p>{{new.title}}</p>
+    {{/carousel-item}}
+  {{/each}}
+  {{/carousel-body}}
+  {{#carousel-arrow direction="left" tagName="button" class='btn'}}
+    <span class='glyphicon glyphicon-arrow-left'></span>
+  {{/carousel-arrow}}
+  {{#carousel-arrow direction="right" tagName="button" class='btn'}}
+    <span class='glyphicon glyphicon-arrow-right'></span>
+  {{/carousel-arrow}}
+{{/carousel-container}}
+
+</div>
+<!-- {{#slick-carousel
+  class="ember-carousel"
+  autoplay=true
+  autoplaySpeed=2000
+  slidesToShow=1
+  slidesToScroll=1
+  dots=true
+  fade=true}}
+  {{#each model as |new|}}
+    <div>
+      <img src='{{new.image}}' />
+      <p>{{new.title}}</p>
+    </div>
+  {{/each}}
+{{/slick-carousel}} -->

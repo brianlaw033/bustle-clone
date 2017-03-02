@@ -1,0 +1,12 @@
+<div>
+  {{carousel-news model=model}}
+</div>
+
+<div class='container-fluid'>
+  {{#each model as |new|}}
+    {{news-list new=new}}
+  {{/each}}
+</div>
+<div class='container-fluid'>
+  {{create-news submit='submit'}}
+</div>

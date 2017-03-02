@@ -1,0 +1,13 @@
+{{#if showEdit}}
+<div>
+  <form>
+    {{input value=new.author id='author'}}<br />
+    {{input value=new.title id='title'}}<br />
+    {{input value=new.content id='content'}}<br />
+    {{input value=new.image id='image'}}<br />
+    <button {{action 'update' new}}>Submit</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'editNew'}}>Edit</button>
+{{/if}}
